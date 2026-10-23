@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "description": "Blood bank management platform",
   "workspaces": ["backend", "frontend"],
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspace=frontend"
+  }
 }
