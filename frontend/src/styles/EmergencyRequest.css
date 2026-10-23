@@ -1,0 +1,138 @@
+.emergency-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(200, 30, 58, 0.05), rgba(0, 0, 0, 0.3));
+}
+
+.emergency-card {
+  background-color: #161B22;
+  border: 2px solid #C81E3A;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 20px rgba(200, 30, 58, 0.2);
+}
+
+.emergency-card h2 {
+  color: #C81E3A;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.emergency-card input,
+.emergency-card select {
+  padding: 0.75rem;
+  background-color: #0D1117;
+  border: 1px solid #262E3B;
+  border-radius: 4px;
+  color: #F5F6F8;
+  font-size: 1rem;
+}
+
+.emergency-card input:focus,
+.emergency-card select:focus {
+  outline: none;
+  border-color: #C81E3A;
+  box-shadow: 0 0 4px rgba(200, 30, 58, 0.3);
+}
+
+.emergency-card input.error,
+.emergency-card select.error {
+  border-color: #C81E3A !important;
+}
+
+.error-text {
+  color: #C81E3A;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.emergency-card button {
+  padding: 0.75rem;
+  background-color: #C81E3A;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.emergency-card button:hover:not(:disabled) {
+  background-color: #8F1329;
+  box-shadow: 0 4px 12px rgba(200, 30, 58, 0.3);
+}
+
+.emergency-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.emergency-card p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.emergency-card .success {
+  color: #2A9D8F;
+  background-color: rgba(42, 157, 143, 0.1);
+}
+
+.emergency-card .error {
+  color: #C81E3A;
+  background-color: rgba(200, 30, 58, 0.1);
+}
+
+.allocated-unit {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(42, 157, 143, 0.1);
+  border: 1px solid #2A9D8F;
+  border-radius: 4px;
+  color: #F5F6F8;
+}
+
+.allocated-unit h4 {
+  color: #2A9D8F;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+.unit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.unit-details p {
+  text-align: left;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.status-badge {
+  background-color: #2A9D8F;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}

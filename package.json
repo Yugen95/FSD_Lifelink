@@ -1,0 +1,7 @@
+{
+  "name": "lifelink",
+  "version": "1.0.0",
+  "description": "Blood bank management platform",
+  "workspaces": ["backend", "frontend"],
+  "private": true
+}

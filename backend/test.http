@@ -1,0 +1,50 @@
+### Register a donor
+POST http://localhost:5000/api/donors/register
+Content-Type: application/json
+
+{
+  "name": "Raj Kumar",
+  "email": "raj@example.com",
+  "phone": "9876543210",
+  "bloodGroup": "O+",
+  "dob": "1995-05-15"
+}
+
+### Get all donors
+GET http://localhost:5000/api/donors
+
+### Create blood unit
+POST http://localhost:5000/api/blood-units/create
+Content-Type: application/json
+
+{
+  "donorId": "6adb03a0119222396ab19e79",
+  "bloodGroup": "O+",
+  "collectionDate": "2026-10-01",
+  "expiryDate": "2028-10-16"
+}
+
+### Get available O+ units
+GET http://localhost:5000/api/blood-units/available/O+
+
+### Create emergency request
+POST http://localhost:5000/api/emergency-requests/create
+Content-Type: application/json
+
+{
+  "hospitalName": "City Hospital",
+  "bloodGroup": "O+",
+  "quantity": 1,
+  "urgency": "critical"
+}
+
+### Get all emergency requests
+GET http://localhost:5000/api/emergency-requests
+
+### Update testing status to cleared (replace UNIT_ID with _id from "Create blood unit" response)
+PATCH http://localhost:5000/api/blood-units/6adb056e119222396ab19e7d/test-status
+Content-Type: application/json
+
+{
+  "testingStatus": "cleared"
+}
